@@ -49,26 +49,42 @@ O conjunto de dados que representam o contexto está disponível na plataforma d
 
 ## Planejamento da solução
 
-1. Entendimento do negócio e problemas e serem resolvidos
+1. Entendimento do negócio e problemas e serem resolvidos - Buscar entender os reais motivos da necessidade da previsão de vendas e como o probelma pode ser resolvido através de machine learning, quais aspectos serão considerados na hora da predição e quão melhor a solução proposta pode ser considerando os modelos de predição utilizados atualmente na empresa.    
 
-2. Coleta de dados
+2. Coleta de dados - Acesso a plataforma do Kaggle para download dos arquivos que serão usados.
 
-3. Limpeza dos dados
+3. Limpeza dos dados - Os dados são analisados usando diferentes técnicas para verificar a existência de dados faltantes, outliers (valor discrepantes) , ou qualquer tipo de inconsistências para que assim possam ser tratados devidamente e não impactar nas análises futuras. 
 
-4. Exploração dos dados em busca de um melhor entendimento do negócio através da geração de insights e das variáveis mais importantes na modelagem do modelo de Machine Learning 
+4. Exploração dos dados em busca de um melhor entendimento do negócio através da geração de insights e das variáveis mais importantes na modelagem do modelo de Machine Learning. Diversas hipóteses foram levantadas e validadas para obtenção de um conhecimento de negócio mais profundo, verificando também a correlação entre os atributos para que se possa ter uma ideia da importância de cada um para o modelo de machine learning. 
 
-5. Preparação dos dados para os algoritmos de machine learning
+5. Preparação dos dados para os algoritmos de machine learning - Os dados foram transformados, balanceados e regularizados para que atendam as premissas de funcionamento dos algoritmos de machine learning, nesta etapa é importante deixar os dados preparados para que os algoritmos possam ter o melhor desempenho possível, e possíveis inconsistencias no dataset não interfiram no resultado final. 
 
-6. Aplicação dos algoritmos de machine learning
+6. Aplicação dos algoritmos de machine learning - Nesta etapa foram escolhidos os algoritmos de machine learning que seriam usados e então os mesmos foram treinados com os dados já preparados e prontos, cada algoritmo foi testado usando seus devidos parâmetros e posteriormente estratégias de cross validation foram usadas para verificar o real resultado do medelo, bem como tecnicas de hyperparameter fine tunning para encontrar os melhores parâmetros para o modelo escolhido. 
 
-7. Avaliação do algoritmo
+7. Avaliação do algoritmo - O algoritmo é avaliado com base em algumas métricas e nesse ponto verifica-se ou não a necessidade de realizar mais um ciclo para melhorar o desempenho final.
 
-8. Tradução do erro em métricas de negócio
+8. Tradução do erro em métricas de negócio - Com o melhor modelo escolhido, treinado e otimizado a taxa de erro encontrada é trasnformada em mátricas de negócio para que se saiba concretamente quanto de retorno financeiro aquela solução trouxe para a empresa. 
 
-9. Deploy do modelo em produção
+9. Deploy do modelo em produção - O modelo foi colocado em produção no ambiente cloud Heroku para que as predições possam ser utilizadas através de requisições a uma API. 
 
 ## Melhores Insights
 
+1. Lojas com maior sortimento vendem menos;
+2. Lojas com promoções ativas por mais tempo vendem menos, depois de um certo periodo de promoção;
+3. Lojas vendem mais depois do dia 10 de cada mes;
+4. Lojas com competidores mais proximos vendem mais
+
 ## Machine Learning Models
 
+Os algoritmos utilizados para fazer a predição foram: 
+- Modelo de média para que fosse possível ter um modelo base de comparação, 
+- Linear Regression;
+- Linear Regression Regularized (Lasso);
+- Ramdom Forest Regressor;
+- XGBoost Regressor. 
+
+Após todos os testes e avaliações de performance 
+
 ## Resultados 
+
+## Conclusão
