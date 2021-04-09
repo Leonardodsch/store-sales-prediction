@@ -17,35 +17,35 @@ A empresa Rossmann opera mais de 3.000 drogarias em 7 países europeus. Atualmen
 
 O conjunto de dados que representam o contexto está disponível na plataforma do Kaggle. Esse é o link: https://www.kaggle.com/c/rossmann-store-sales/data. O dataset possui os seguintes atributos:
 
-**Id** - um Id que representa (Store, Date) dentro do conjunto de teste
+- **Id** - um Id que representa (Store, Date) dentro do conjunto de teste
 
-**Store** - Id único para cada loja
+- **Store** - Id único para cada loja
 
-**Sales** - o volume de negócios em um determinado dia.
+- **Sales** - o volume de negócios em um determinado dia.
 
-**Customers** - o número de clientes em um determinado dia
+- **Customers** - o número de clientes em um determinado dia
 
-**Open** - um indicador para saber se a loja estava aberta: 0 = fechada, 1 = aberta
+- **Open** - um indicador para saber se a loja estava aberta: 0 = fechada, 1 = aberta
 
-**StateHoliday** - indica um feriado estadual. Normalmente todas as lojas, com poucas exceções, fecham nos feriados estaduais. Observe que todas as escolas fecham nos feriados e finais de semana. a = feriado, b = feriado da Páscoa, c = Natal, 0 = Nenhum
+- **StateHoliday** - indica um feriado estadual. Normalmente todas as lojas, com poucas exceções, fecham nos feriados estaduais. Observe que todas as escolas fecham nos feriados e finais de semana. a = feriado, b = feriado da Páscoa, c = Natal, 0 = Nenhum
 
-**SchoolHoliday** - indica se (Loja, Data) foi afetado pelo fechamento de escolas públicas
+- **SchoolHoliday** - indica se (Loja, Data) foi afetado pelo fechamento de escolas públicas
 
-**StoreType** - diferença entre 4 modelos de loja diferentes: a, b, c, d
+- **StoreType** - diferença entre 4 modelos de loja diferentes: a, b, c, d
 
-**Assortment** - descreve um nível de sortimento: a = básico, b = extra, c = estendido
+- **Assortment** - descreve um nível de sortimento: a = básico, b = extra, c = estendido
 
-**CompetitionDistance** - distância em metros até a loja concorrente mais próxima
+- **CompetitionDistance** - distância em metros até a loja concorrente mais próxima
 
-**CompetitionOpenSince[Month/Year]** - o ano e mês aproximados em que o concorrente mais próximo foi aberto
+- **CompetitionOpenSince[Month/Year]** - o ano e mês aproximados em que o concorrente mais próximo foi aberto
 
-**Promo** - indica se uma loja está fazendo uma promoção naquele dia
+- **Promo** - indica se uma loja está fazendo uma promoção naquele dia
 
-**Promo2** - Promo2 é uma promoção contínua e consecutiva para algumas lojas: 0 = a loja não está participando, 1 = a loja está participando
+- **Promo2** - Promo2 é uma promoção contínua e consecutiva para algumas lojas: 0 = a loja não está participando, 1 = a loja está participando
 
-**Promo2Since[Year/Week]** - descreve o ano e a semana em que a loja começou a participar da Promo2
+- **Promo2Since[Year/Week]** - descreve o ano e a semana em que a loja começou a participar da Promo2
 
-**PromoInterval** - descreve os intervalos consecutivos de início da promoção 2, nomeando os meses em que a promoção é iniciada novamente. Por exemplo. "Fev, maio, agosto, novembro" significa que cada rodada começa em fevereiro, maio, agosto, novembro de qualquer ano para aquela loja
+- **PromoInterval** - descreve os intervalos consecutivos de início da promoção 2, nomeando os meses em que a promoção é iniciada novamente. Por exemplo. "Fev, maio, agosto, novembro" significa que cada rodada começa em fevereiro, maio, agosto, novembro de qualquer ano para aquela loja
 
 ## Planejamento da solução
 
