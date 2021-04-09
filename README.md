@@ -4,7 +4,7 @@
 
 
 <p align="center">
-  <img width="1000" height="400" src="https://howesoundpharmacy.ca/wp-content/uploads/health-medical-products-howe-sound-pharmacy-gibsons-bc.jpg" />
+  <img width="1000" height="400" src="https://miro.medium.com/max/1000/0*IpUXpwNleNMgpPFr.png"/>
 </p>
 
 
