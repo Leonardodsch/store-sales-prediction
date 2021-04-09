@@ -87,4 +87,17 @@ Após todos os testes e avaliações de performance
 
 ## Resultados 
 
+Através da interpretação do erro do modelo de machine learning foi possível avalia-lo de meneira a agregar valor para o cliete, com os resultados financeiros apresentados a seguir: 
+
+![image](https://user-images.githubusercontent.com/76128123/114114780-f0b89d80-98b7-11eb-86bc-fd840b17d4e4.png)
+
+A tabela acima mostra algums lojas escolhidas aleatoriamente e as suas respectivas previsões vendas, com o cálculo de melhor e pior cenário possivel, utilizando a métrica MAE, que indica a mádia do erro absoluto que o modelo possui.
+
+![image](https://user-images.githubusercontent.com/76128123/114115150-adaafa00-98b8-11eb-8f4b-47af8ab5b08c.png)
+
+Na segunda tabela é possivel observar o valor total somado de faturamento para todas as lojas, também considerando um melhor e um pior cenário. 
+
 ## Conclusão
+
+Após todas as análises feitas através da exploração de dados e entendimento do negócio chegou-se em resultado satisfatório para o probelma em questão, o modelo escolhido aprentou uma boa performance com um erro relativamente baixo para a grandeza dos valores que foram preditos, fazendo com que o time de negócios possa tomar decisões muito mais assertivas e ter uma boa previsibilidade da receita futura usando essa solução. Por se tratar de um problema de previsão de vendas essa solução poderia ter sido trabalhada utilizando algoritmos de séries temporais porém optou-se pela utilização de uma regressão por possuiu modelos simples que já poderiam trazer bons resultados rapidamente, por não se tratar de um problema simples um modelo de árvore ecabou sendo escolhido para implementação. Em possiveis aprimoramentos do trabalho seria interessante testar também modelos de séries temporais e comparar o desempenho com os já conhecidos para um possível atualização dos modelos caso necessário. Mas de maneira geral os resultados obtidos ficaram de acordo com as expectativas do CFO e agora a empresa pode tomar melhores decisões baseada em seus próprios dados.        
+
