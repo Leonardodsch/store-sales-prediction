@@ -69,10 +69,33 @@ O conjunto de dados que representam o contexto está disponível na plataforma d
 
 ## Melhores Insights
 
-1. Lojas com maior sortimento vendem menos;
-2. Lojas com promoções ativas por mais tempo vendem menos, depois de um certo periodo de promoção;
-3. Lojas vendem mais depois do dia 10 de cada mes;
-4. Lojas com competidores mais proximos vendem mais
+**1. Lojas com maior sortimento vendem menos**
+
+<p align="center">
+  <img width="650" height="400" src="https://user-images.githubusercontent.com/76128123/129405567-7b3251c0-2dbd-4f2e-8773-8964c7de099b.png"/>
+</p>
+
+
+**2. Lojas com promoções ativas por mais tempo vendem menos, depois de um certo periodo de promoção**
+
+<p align="center">
+  <img width="650" height="400" src="https://user-images.githubusercontent.com/76128123/129405959-4fbc54c7-e809-4509-af89-77f9ee1428fd.png"/>
+</p>
+
+
+**3. Lojas vendem mais depois do dia 10 de cada mês**
+
+<p align="center">
+  <img width="650" height="500" src="https://user-images.githubusercontent.com/76128123/129406089-c9e451f4-4ebc-4142-9b5e-927aa626327e.png"/>
+</p>
+
+
+**4. Lojas com competidores mais proximos vendem mais**
+
+<p align="center">
+  <img width="650" height="500" src="https://user-images.githubusercontent.com/76128123/129406244-1aeeb0d4-4543-4f87-94a6-920d95360e2d.png"/>
+</p>
+
 
 ## Machine Learning Models
 
