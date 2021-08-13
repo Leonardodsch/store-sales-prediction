@@ -105,10 +105,19 @@ Os algoritmos utilizados para fazer a predição foram:
 - Modelo de média para que fosse possível ter um modelo base de comparação, 
 - Linear Regression;
 - Linear Regression Regularized (Lasso);
-- Ramdom Forest Regressor;
+- Random Forest Regressor;
 - XGBoost Regressor. 
 
-Após todos os testes e avaliações de performance 
+Após todos os testes e avaliações de performance dos modelos optou-se por utilizar o modelo XGBoost Regressor, que obteve uma performance muito satisfatória e é um modelo mais leve e rápido em comparação ao Random Forest, e que é um fator que pode fazer diferença quando colocado em produção.
+
+Os resultados abaixo mostram a performance do modelo após realizar o fine tuning dos parâmetros. As métrics utilizadas foram:
+
+- MAE (Mean Absolute error) - Mostra o erro médio absoluto do modelo, tanto para mais quanto para menos.
+- MAPE (Mean Absolute percentage error) - Erro médio absoluto em percentual.
+- RMSE (Root mean squared error) - Erro médio absoluto quadrado, erro médio absoluto elevado ao quadrado. Não é a melhor métrica para uma análise de negócios, porém é muito util para avaliar a performance do modelo em si.  
+
+![image](https://user-images.githubusercontent.com/76128123/129407241-d692f85a-174f-48df-a59b-1c8eb118e410.png)
+
 
 ## Resultados 
 
@@ -124,5 +133,7 @@ Na segunda tabela é possivel observar o valor total somado de faturamento para 
 
 ## Conclusão
 
-Após todas as análises feitas através da exploração de dados e entendimento do negócio chegou-se em resultado satisfatório para o probelma em questão, o modelo escolhido aprentou uma boa performance com um erro relativamente baixo para a grandeza dos valores que foram preditos, fazendo com que o time de negócios possa tomar decisões muito mais assertivas e ter uma boa previsibilidade da receita futura usando essa solução. Por se tratar de um problema de previsão de vendas essa solução poderia ter sido trabalhada utilizando algoritmos de séries temporais porém optou-se pela utilização de uma regressão por possuiu modelos simples que já poderiam trazer bons resultados rapidamente, por não se tratar de um problema simples um modelo de árvore ecabou sendo escolhido para implementação. Em possiveis aprimoramentos do trabalho seria interessante testar também modelos de séries temporais e comparar o desempenho com os já conhecidos para um possível atualização dos modelos caso necessário. Mas de maneira geral os resultados obtidos ficaram de acordo com as expectativas do CFO e agora a empresa pode tomar melhores decisões baseada em seus próprios dados.        
+Após todas as análises feitas através da exploração de dados e entendimento do negócio chegou-se em resultado satisfatório para o probelma em questão, o modelo escolhido aprentou uma boa performance com um erro relativamente baixo para a grandeza dos valores que foram preditos, fazendo com que o time de negócios possa tomar decisões muito mais assertivas e ter uma boa previsibilidade da receita futura usando essa solução. Por se tratar de um problema de previsão de vendas essa solução poderia ter sido trabalhada utilizando algoritmos de séries temporais porém optou-se pela utilização de uma regressão por possuiu modelos simples que já poderiam trazer bons resultados rapidamente, por não se tratar de um problema simples um modelo de árvore ecabou sendo escolhido para implementação. 
+
+Em possiveis aprimoramentos do trabalho seria interessante testar também modelos de séries temporais e comparar o desempenho com os já conhecidos para um possível atualização dos modelos caso necessário. Mas de maneira geral os resultados obtidos ficaram de acordo com as expectativas do CFO e agora a empresa pode tomar melhores decisões baseada em seus próprios dados.        
 
