@@ -1,3 +1,5 @@
+Link para o notebook através do nbviewer (Recomendado para uma melhor visualização): https://nbviewer.jupyter.org/github/Leonardodsch/store-sales-prediction/blob/main/store_sales_prediction.ipynb
+
 # Store Sales Prediction
 
 **Disclaimer:** O Contexto a seguir, é completamente fictício, a empresa, o contexto, as perguntas de negócio foram criadas apenas para o desenvolvimento do projeto, e se baseiam em um desafio do Kaggle. 
