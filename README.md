@@ -135,6 +135,19 @@ A tabela acima mostra algums lojas escolhidas aleatoriamente e as suas respectiv
 
 Na segunda tabela é possivel observar o valor total somado de faturamento para todas as lojas, também considerando um melhor e um pior cenário. 
 
+## Modelo em produção
+
+- A API está hospedada na plataforma Heroku e pode ser consultada através deste url: https://rossmann-prediction-model.herokuapp.com
+
+- O bot no Telegram está disponível neste link: [![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rossmann_prediction_sales_bot)
+  
+  Para visulizar as predições do modelo é preciso informar o numero da loja na conversa com o bot, passando apenas números. Se o número da loja não estiver disponível ele retorna uma mensagem informando e é possível fazer outra consulta informando outro número. A imagem abaixo mostra um exemplo do funcionamento.   
+  
+  <p align="center">
+  <img width="400" height="200" src="https://user-images.githubusercontent.com/76128123/134374392-1b0d5d75-75d0-4c64-b581-d03767d316af.jpg"/>
+</p>
+  
+
 ## Conclusão
 
 Após todas as análises feitas através da exploração de dados e entendimento do negócio chegou-se em resultado satisfatório para o probelma em questão, o modelo escolhido aprentou uma boa performance com um erro relativamente baixo para a grandeza dos valores que foram preditos, fazendo com que o time de negócios possa tomar decisões muito mais assertivas e ter uma boa previsibilidade da receita futura usando essa solução. Por se tratar de um problema de previsão de vendas essa solução poderia ter sido trabalhada utilizando algoritmos de séries temporais porém optou-se pela utilização de uma regressão por possuiu modelos simples que já poderiam trazer bons resultados rapidamente, por não se tratar de um problema simples um modelo de árvore ecabou sendo escolhido para implementação. 
