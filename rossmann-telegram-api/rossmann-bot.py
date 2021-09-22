@@ -4,21 +4,6 @@ import os
 import requests
 from flask import Flask, request, Response
 
-# constants
-TOKEN = '2011157380:AAE2tj8vCMQYjWD5etRL6yKfqgi2cQl2mNM'
-#chat_id = 1225629916
-
-# info about bot
-#https://api.telegram.org/bot2011157380:AAE2tj8vCMQYjWD5etRL6yKfqgi2cQl2mNM/getMe
-        
-# get update
-#https://api.telegram.org/bot2011157380:AAE2tj8vCMQYjWD5etRL6yKfqgi2cQl2mNM/getUpdates
-
-# webhook heroku
-#https://api.telegram.org/bot2011157380:AAE2tj8vCMQYjWD5etRL6yKfqgi2cQl2mNM/setWebhook?url=https://rossmann-predict-bot.herokuapp.com
-        
-# send message
-#https://api.telegram.org/bot2011157380:AAE2tj8vCMQYjWD5etRL6yKfqgi2cQl2mNM/sendMessage?chat_id=chat_id&text=Hi, Leonardo
         
 def send_message(chat_id, text):
     
