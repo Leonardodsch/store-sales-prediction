@@ -144,7 +144,7 @@ Na segunda tabela é possivel observar o valor total somado de faturamento para 
   Para visulizar as predições do modelo é preciso informar o numero da loja na conversa com o bot, passando apenas números. Se o número da loja não estiver disponível ele retorna uma mensagem informando e é possível fazer outra consulta informando outro número. A imagem abaixo mostra um exemplo do funcionamento.   
   
   <p align="center">
-  <img width="400" height="200" src="https://user-images.githubusercontent.com/76128123/134374392-1b0d5d75-75d0-4c64-b581-d03767d316af.jpg"/>
+  <img width="450" height="200" src="https://user-images.githubusercontent.com/76128123/134374392-1b0d5d75-75d0-4c64-b581-d03767d316af.jpg"/>
 </p>
   
 
