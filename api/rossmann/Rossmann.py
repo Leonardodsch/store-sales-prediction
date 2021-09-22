@@ -8,11 +8,11 @@ import datetime
 class Rossmann (object):
     def __init__(self):
        self.home_path = 'C:/Users/leogr/OneDrive/Documentos/Data Science Projects/Portfolio projects/store-sales-prediction/' 
-       self_competition_distance_scaler = pickle.load(open(self.home_path + 'parameters/competition_distance_scaler.pkl','rb'))
-       self_competition_time_month_scaler = pickle.load (open(self.home_path + 'parameters/competition_time_month_scaler.pkl','rb'))
-       self_promo_time_week_scaler = pickle.load(open(self.home_path + 'parameters/promo_time_week_scaler.pkl','rb')) 
-       self_year_scaler = pickle.load(open(self.home_path + 'parameters/year_scaler.pkl','rb'))
-       self_store_type_scaler = pickle.load(open(self.home_path + 'parameters/store_type_scaler.pkl','rb'))
+       self.competition_distance_scaler = pickle.load(open(self.home_path + 'parameters/competition_distance_scaler.pkl','rb'))
+       self.competition_time_month_scaler = pickle.load (open(self.home_path + 'parameters/competition_time_month_scaler.pkl','rb'))
+       self.promo_time_week_scaler = pickle.load(open(self.home_path + 'parameters/promo_time_week_scaler.pkl','rb')) 
+       self.year_scaler = pickle.load(open(self.home_path + 'parameters/year_scaler.pkl','rb'))
+       self.store_type_scaler = pickle.load(open(self.home_path + 'parameters/store_type_scaler.pkl','rb'))
     
     def data_cleaning(self, df1):
          
@@ -113,20 +113,20 @@ class Rossmann (object):
         df5['competition_distance'] = self.competition_distance_scaler.fit_transform(df5[['competition_distance']].values)
 
         # competition_time_month
-        df5['competition_time_month'] = self_competition_time_month_scaler.fit_transform(df5[['competition_time_month']].values)
+        df5['competition_time_month'] = self.competition_time_month_scaler.fit_transform(df5[['competition_time_month']].values)
 
         # promo_time_week
-        df5['promo_time_week'] = self_promo_time_week_scaler.fit_transform(df5[['promo_time_week']].values)
+        df5['promo_time_week'] = self.promo_time_week_scaler.fit_transform(df5[['promo_time_week']].values)
         
         # year
-        df5['year'] = self_year_scaler.fit_transform(df5[['year']].values)
+        df5['year'] = self.year_scaler.fit_transform(df5[['year']].values)
         
         # Encoding
         # state holiday -- One Hot Encoding
         df5 = pd.get_dummies(df5, prefix=['state_holiday'], columns=['state_holiday'])
 
         # store_type -- Label Encoding
-        df5['store_type'] = self_store_type_scaler.fit_transform(df5['store_type'])
+        df5['store_type'] = self.store_type_scaler.fit_transform(df5['store_type'])
 
         #  assortment -- Ordinal Encoding
         assortment_dict = {'basic': 1, 'extra': 2, 'extended': 3}
@@ -160,6 +160,6 @@ class Rossmann (object):
         pred = model.predict(test_data)
         
         # join pred into original data
-        original_data['prediciton'] = np.exmp1(pred)
+        original_data['prediction'] = np.expm1(pred)
         
         return original_data.to_json(orient='records', date_format='iso')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
